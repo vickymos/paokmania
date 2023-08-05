@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="  Πρωινή δουλειά στην Τούμπα πριν την αναχώρηση για Ισραήλ την Τρίτη (01.08) για το αγωνιστικό τμήμα του Δικεφάλου.." />
     <link href="../dist/output.css" rel="stylesheet">
+    <link href="../dist/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 </head>
 <body>
 
@@ -18,6 +22,7 @@
     </header>
     <main class="bg-white dark:bg-gray-950">
         <article>
+            
             <div class="px-4 my-8 text-center">
                 <div class="wide-column max-w-screen-lg mx-auto py-2 md:py-4">
                     <ul class="flex gap-2 font-bold uppercase text-xs mb-2 justify-center  text-gray-900 dark:text-white">
@@ -43,8 +48,10 @@
                 <div class="wide-column max-w-screen-lg mx-auto py-2 md:py-4">
                     <div class="flex flex-wrap md:flex-wrap gap-6">
 
-                        <div class="grow shrink min-w-0 basis-0 prose">
-                            <img src="https://placehold.co/300x250?font=osward" alt="test">
+                        <div class="grow shrink min-w-[calc(100%_-_324px)] basis-0 prose">
+
+                        
+                            <img src="https://www.paokmania.gr/media/k2/items/cache/c3be09277b5eb19bf6547ffffe563e8c_L.jpg" alt="test">
 
                             <p>
                                 Η τελευταία προπόνηση στην Ελλάδα ήταν αφιερωμένη στο κομμάτι της τακτικής, με έμφαση στην ανάπτυξη, ενώ ειδικό πρόγραμμα έγινε και για τις στατικές φάσεις.
@@ -59,9 +66,146 @@
                                 Ζίβκοβιτς, Κοτάρσκι , Ταλιχμανίδης , Βιεϊρίνια , Κεντζιόρα , Εκόνγκ , Νάσμπεργκ , Κουλιεράκης , Μιχαηλίδης , Ράφα Σοάρες , Μπάμπα , Τσιγγάρας , Σβαμπ , Ντόουγκλας , Φιλίπε Σοάρες , Μουργκ , Τάισον , Κωνσταντέλιας , Νάρεϊ , Α.Ζίβκοβιτς , Βρακάς , Μπράντον , Σαμάτα, Τζίμας.              Την Τετάρτη (02.08) ο ΠΑΟΚ θα προπονηθεί στις 19:30 στο Teddy Stadium, ενώ στις 19:00 θα διεξαχθεί η συνέντευξη Τύπου του Ράζβαν Λουτσέσκου και εκπροσώπου των ποδοσφαιριστών. Η προπόνηση θα είναι ανοιχτή για 15 λεπτά για τους εκπροσώπους των ΜΜΕ.
                             </p>
 
+                            <section class="border-t-0 border-gray-200 m-y-6">
+                                <h2>Tags</h2>
+
+                                <ul class="list-none p-0 m-0 text-sm flex gap-2">
+                                    <li class="m-0 p-0">
+                                        <a href="/" class="inline-block no-underline px-2 py-1 rounded-sm  bg-slate-200 hover:bg-black hover:text-white transition-all duration-300">
+                                            ΠΑΟΚ
+                                        </a>
+                                    </li>
+                                    <li class="m-0 p-0">
+                                        <a href="/" class="inline-block no-underline px-2 py-1 rounded-sm  bg-slate-200 hover:bg-black hover:text-white transition-all duration-300">
+                                            Χάιντουκ ΠΑΟΚ
+                                        </a>
+                                    </li>
+                                    <li class="m-0 p-0">
+                                        <a href="/" class="inline-block no-underline px-2 py-1 rounded-sm  bg-slate-200 hover:bg-black hover:text-white transition-all duration-300">
+                                            ομαδα
+                                        </a>
+                                    </li>
+                                    <li class="m-0 p-0">
+                                        <a href="/" class="inline-block no-underline px-2 py-1 rounded-sm  bg-slate-200 hover:bg-black hover:text-white transition-all duration-300">
+                                            Μεταγραφές ΠΑΟΚ 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+
                         </div>
-                        <aside class="grow-0 shrink-0 min-w-0 basis-[300px]">
-                                <img src="https://placehold.co/300x250?font=osward" alt="test">
+                        <aside class="grow-0 shrink-0 min-w-0 basis-[300px] relative">
+                            <div class="sticky top-6">
+
+                                <section class="mb-8">
+                                    <img src="https://placehold.co/300x250?font=osward" alt="test">
+                                </section>
+
+                                <section>
+                                    <h2 class="font-medium mb-4 uppercase">Τι γραφουν τα ΜΜΕ</h2>
+
+                                    <div class="tabs-container">
+                                        <ul class="tabs js-tabs flex text-center border-b border-gray-400">
+                                          <li class="w-1/2">
+                                            <a data-id="tab-0" href="#" data-context="tabbedNews" class="cursor-pointer js-tab-picker tab-picker tab-picker-plain block tab-picker--active">Για τον ΠΑΟΚ</a>
+                                          </li>
+                                          <li class="w-1/2">
+                                            <a data-id="tab-1" href="#" data-context="tabbedNews" class="cursor-pointer js-tab-picker tab-picker block">Για τους αντιπάλους</a>
+                                          </li>
+                                         
+                                        </ul>
+                                      </div>
+                                      <div class="js-tab" data-context="tabbedNews" id="tab-0">
+                                        
+                                        <div class="swiper mySwiper">
+                                            
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <ul class="text-xs mb-2">
+                                                        <li>
+                                                            <article>
+                                                                <a class="flex gap-2" href="/">
+                                                                    <img src="https://placehold.co/120x90?font=osward" alt="test">
+                                                                    <div>
+                                                                        <h3 class="mb-2">
+                                                                            Ο «μάγος» Κωνσταντέλιας αποκαλύπτεται: «Όποιος θέλει ας με ξέρει κι όποιος θέλει ας μην με ξέρει»!
+                                                                        </h3>
+                                                                        <time class="mb-2 text-gray-800 text-xs">05/08/2023</time>
+                                                                    </div>                                                                  
+                                                                </a>
+                                                            </article>
+                                                        </li>
+                                                        <li><a class="no-underline hover:underline" href="/">ΕΥΡΩΠΗ</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <ul class=" gap-2 font-bold uppercase text-xs mb-2 justify-center  text-gray-900 dark:text-white">
+                                                        <li><a class="no-underline hover:underline" href="/">ΠΟΔΟΣΦΑΙΡΟ</a></li>
+                                                        <li><a class="no-underline hover:underline" href="/">ΕΥΡΩΠΗ</a></li>
+                                                    </ul>
+                                                </div>                                            
+                                            </div>
+
+                                            <div class="flex my-4 items-center">
+                                                <span class="swiper-single-prev">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                                        <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
+                                                    </svg>
+                                                </span>
+                                                
+                                                <div class="swiper-single-pagination flex justify-center"></div>
+                                                <span class="swiper-single-next">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                                        <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                                                    </svg>
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                      </div>
+                                      <div class="js-tab hidden" data-context="tabbedNews" id="tab-1">
+                                        <div class="swiper mySwiper">
+                                            
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <ul class="text-xs mb-2">
+                                                        <li><a class="no-underline hover:underline" href="/">ΠΟΔΟΣΦΑΙΡΟ</a></li>
+                                                        <li><a class="no-underline hover:underline" href="/">ΕΥΡΩΠΗ</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <ul class=" gap-2 font-bold uppercase text-xs mb-2 justify-center  text-gray-900 dark:text-white">
+                                                        <li><a class="no-underline hover:underline" href="/">ΠΟΔΟΣΦΑΙΡΟ</a></li>
+                                                        <li><a class="no-underline hover:underline" href="/">ΕΥΡΩΠΗ</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <ul class=" gap-2 font-bold uppercase text-xs mb-2 justify-center  text-gray-900 dark:text-white">
+                                                        <li><a class="no-underline hover:underline" href="/">ΠΟΔΟΣΦΑΙΡΟ</a></li>
+                                                        <li><a class="no-underline hover:underline" href="/">ΕΥΡΩΠΗ</a></li>
+                                                    </ul>
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="flex my-2 items-center">
+                                                <span class="swiper-single-prev">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+                                                </span>
+                                                
+                                                <div class="swiper-single-pagination flex justify-center"></div>
+                                                <span class="swiper-single-next">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                      </div>                              
+
+                                </section>
+
+
+
+                            </div>
                         </aside>
                     </div>
                 </div>
@@ -77,6 +221,26 @@
             </div>
         </div>
     </footer>    
-  
+
+  <script src="/dist/index.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    // let prevArrow = document.querySelectorAll('.swiper-single-prev')
+    // let nextArrow = document.querySelectorAll('.swiper-single-next')
+      var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-single-pagination",
+        clickable:true
+      },
+      navigation: {
+        nextEl: ".swiper-single-next",
+        prevEl: ".swiper-single-prev"
+      },
+    });
+  </script>
+
 </body>
 </html>
