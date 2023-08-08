@@ -2,11 +2,14 @@
 
 
 .tab-picker{
-  opacity: 0.3;
+  transition: background-color 200ms ease, color 200ms ease;
+  background-color: #fff;
+  color: #000000;
 }
 
-.tab-picker--active{
-  opacity: 1;
+.tab-picker--active, 
+.tab-picker:hover{
+    background-color: #000000;
+    color: #fff;
 }
-
 

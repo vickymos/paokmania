@@ -11,7 +11,40 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/tabs */ "./src/js/tabs.js");
 /* harmony import */ var _js_tabs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_tabs__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _js_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/menu */ "./src/js/menu.js");
+/* harmony import */ var _js_menu__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_menu__WEBPACK_IMPORTED_MODULE_1__);
 
+
+
+/***/ }),
+
+/***/ "./src/js/menu.js":
+/*!************************!*\
+  !*** ./src/js/menu.js ***!
+  \************************/
+/***/ (() => {
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var trigger = document.getElementById('menu-trigger');
+  var menuItems = document.querySelectorAll('.js-menu-item');
+
+  //closing the search
+  if (menuItems) {
+    menuItems.forEach(function (menuItem) {
+      menuItem.addEventListener("click", function (e) {
+        //...mpla
+      });
+    });
+  }
+  if (trigger) {
+    trigger.addEventListener("click", function (e) {
+      trigger.classList.toggle('menu-trigger--active');
+      console.log(trigger);
+    });
+  }
+});
 
 /***/ }),
 
