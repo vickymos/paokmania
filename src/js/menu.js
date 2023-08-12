@@ -1,23 +1,23 @@
 "use strict";
 document.addEventListener('DOMContentLoaded',function(){
 
-    const trigger = document.getElementById('menu-trigger');
-    
-    const menuItems = document.querySelectorAll('.js-menu-item');
+    const trigger = document.getElementById('menu-trigger');    
+    const menuItems = document.querySelectorAll('.js-trigger-submenu');
 
-    //closing the search
     if (menuItems) {
         
         menuItems.forEach((menuItem) => {
-
+        
             menuItem.addEventListener("click", (e) => {
-              //...mpla
-
+                
+              e.preventDefault();
+              const submmenuid = menuItem.dataset.submenuid;
+              const submmenuItem = document.getElementById(submmenuid);
+        
+              submmenuItem.classList.toggle('submenu--active')
             });
         });
     }
-
-
 
     if (trigger) {
     

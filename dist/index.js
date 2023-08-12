@@ -28,13 +28,14 @@ __webpack_require__.r(__webpack_exports__);
 
 document.addEventListener('DOMContentLoaded', function () {
   var trigger = document.getElementById('menu-trigger');
-  var menuItems = document.querySelectorAll('.js-menu-item');
-
-  //closing the search
+  var menuItems = document.querySelectorAll('.js-trigger-submenu');
   if (menuItems) {
     menuItems.forEach(function (menuItem) {
       menuItem.addEventListener("click", function (e) {
-        //...mpla
+        e.preventDefault();
+        var submmenuid = menuItem.dataset.submenuid;
+        var submmenuItem = document.getElementById(submmenuid);
+        submmenuItem.classList.toggle('submenu--active');
       });
     });
   }
