@@ -8,7 +8,12 @@ module.exports = {
       'sans': ['"Ubuntu"', 'serif'],
       'headings': ['"Roboto Condensed"', 'serif'],
     },
-    extend: {},
+    extend: {
+      colors:{
+        gold: '#ab884a'
+      }
+    },
+   
   },
   plugins: [
     require('@tailwindcss/typography'),

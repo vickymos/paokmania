@@ -29,6 +29,7 @@ __webpack_require__.r(__webpack_exports__);
 document.addEventListener('DOMContentLoaded', function () {
   var trigger = document.getElementById('menu-trigger');
   var menuItems = document.querySelectorAll('.js-trigger-submenu');
+  var mainNav = document.getElementById('main-nav');
   if (menuItems) {
     menuItems.forEach(function (menuItem) {
       menuItem.addEventListener("click", function (e) {
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (trigger) {
     trigger.addEventListener("click", function (e) {
       trigger.classList.toggle('menu-trigger--active');
-      console.log(trigger);
+      mainNav.classList.toggle('main-nav--active');
     });
   }
 });

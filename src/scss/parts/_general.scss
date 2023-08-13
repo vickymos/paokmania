@@ -6,11 +6,11 @@
     overflow: hidden;
     &:after{
         position: absolute;
-        opacity: 0.1;
-        top:-120px;
+        opacity: 0.08;
+        top:-100px;
         right:-20px;
         
-        width: 40%;
+        width: 42%;
         background-size: cover;
         bottom: -100px;
         background-image: url(/src/images/emblem.png);
@@ -18,4 +18,27 @@
         content: '';
     }
     
+}
+
+.has-emblem--small{
+    &:after{
+        position: absolute;
+    opacity: 0.08;
+    top: -5px;
+    right: -5px;
+    width: 30%;
+    background-size: cover;
+    bottom: -50px;    
+    }
+}
+
+.contains-emblem{
+    position: absolute;
+    inset:0;
+}
+
+.prose{
+    picture img{
+        margin-top: 0;
+    }
 }

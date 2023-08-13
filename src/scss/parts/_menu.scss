@@ -8,16 +8,25 @@
 }
 
 .submenu{
-    display: none;
+    // display: none;
     position: absolute;
-    top: 40px;
-    left: 0;
     width: 200px;
     background-color: v.$primary;
     color: #fff;
 
     a{
         padding:8px;
+    }
+
+    .level-2{
+        left: 0;
+        top: 40px;
+    }
+
+    .level-3{
+        top: 0;
+        left: auto;
+        right: -100%;
     }
 }
 
@@ -31,7 +40,14 @@
 
 .level-handlers{
          
-    padding-right: 20px;
+    > a{
+        padding-right: 32px;
+        @media (width >= 1024px) {
+            position: relative;
+            z-index: 22;
+        }
+        
+    }
     
 }
 
@@ -49,5 +65,23 @@
 .has-submenu:hover{
     > .submenu{
         display: block;
+    }
+}
+
+
+@media (width < 1024px) {
+    .main-nav{
+        transition: transform 200ms ease;
+        transform: translate3d(0, calc(-100% - 100px), 0);  
+    }    
+
+    .main-nav--active{    
+        transform: translate3d(0, 0, 0);  
+    }    
+
+    .menu-trigger{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
     }
 }
