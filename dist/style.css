@@ -1216,6 +1216,21 @@ video {
 .min-w-full{
   min-width: 100%;
 }
+.min-w-\[calc\(100\%_-_414px\)\]{
+  min-width: calc(100% - 414px);
+}
+.min-w-\[calc\(100\%_-_514px\)\]{
+  min-width: calc(100% - 514px);
+}
+.min-w-\[calc\(100\%_-_714px\)\]{
+  min-width: calc(100% - 714px);
+}
+.min-w-\[calc\(100\%_-_814px\)\]{
+  min-width: calc(100% - 814px);
+}
+.min-w-\[calc\(100\%_-_824px\)\]{
+  min-width: calc(100% - 824px);
+}
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -1263,6 +1278,15 @@ video {
 }
 .basis-\[90px\]{
   flex-basis: 90px;
+}
+.basis-\[350px\]{
+  flex-basis: 350px;
+}
+.basis-\[450px\]{
+  flex-basis: 450px;
+}
+.basis-\[460px\]{
+  flex-basis: 460px;
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1505,6 +1529,12 @@ video {
 }
 .font-medium{
   font-weight: 500;
+}
+.font-semibold{
+  font-weight: 600;
+}
+.font-light{
+  font-weight: 300;
 }
 .uppercase{
   text-transform: uppercase;
