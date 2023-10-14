@@ -50,3 +50,8 @@
   .swiper-marquee{
     overflow: hidden;
   }
+
+  .swiper-slide{
+    display: flex !important;
+    height: auto !important;
+  }

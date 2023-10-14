@@ -176,6 +176,11 @@
   overflow: hidden;
 }
 
+.swiper-slide {
+  display: flex !important;
+  height: auto !important;
+}
+
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
@@ -1072,6 +1077,9 @@ video {
 .right-0{
   right: 0px;
 }
+.right-2{
+  right: 0.5rem;
+}
 .right-40{
   right: 10rem;
 }
@@ -1133,6 +1141,12 @@ video {
 .mt-8{
   margin-top: 2rem;
 }
+.line-clamp-2{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
@@ -1154,6 +1168,24 @@ video {
 .hidden{
   display: none;
 }
+.aspect-square{
+  aspect-ratio: 1 / 1;
+}
+.aspect-\[3\/4\]{
+  aspect-ratio: 3/4;
+}
+.aspect-\[298\/234\]{
+  aspect-ratio: 298/234;
+}
+.h-10{
+  height: 2.5rem;
+}
+.h-9{
+  height: 2.25rem;
+}
+.min-h-\[40px\]{
+  min-height: 40px;
+}
 .w-1\/2{
   width: 50%;
 }
@@ -1162,6 +1194,9 @@ video {
 }
 .w-8{
   width: 2rem;
+}
+.w-9{
+  width: 2.25rem;
 }
 .min-w-0{
   min-width: 0px;
@@ -1294,6 +1329,9 @@ video {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
+.rounded-br-xl{
+  border-bottom-right-radius: 0.75rem;
+}
 .border-2{
   border-width: 2px;
 }
@@ -1355,6 +1393,9 @@ video {
 }
 .fill-blue-500{
   fill: #3b82f6;
+}
+.fill-gold{
+  fill: #ab884a;
 }
 .p-0{
   padding: 0px;
@@ -1521,6 +1562,9 @@ video {
 .no-underline{
   text-decoration-line: none;
 }
+.opacity-80{
+  opacity: 0.8;
+}
 .opacity-90{
   opacity: 0.9;
 }
@@ -1561,9 +1605,6 @@ video {
 @media (min-width: 768px){
   .md\:sticky{
     position: sticky;
-  }
-  .md\:flex{
-    display: flex;
   }
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
