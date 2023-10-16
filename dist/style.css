@@ -155,7 +155,7 @@
   transform: rotate(-90deg);
 }
 
-.swiper-slide img {
+.swiper-slide img:not(.default-img) {
   display: block;
   width: 100%;
   height: 100%;
@@ -1141,11 +1141,8 @@ video {
 .mt-8{
   margin-top: 2rem;
 }
-.line-clamp-2{
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 .line-clamp-3{
   overflow: hidden;
@@ -1159,6 +1156,9 @@ video {
 .inline-block{
   display: inline-block;
 }
+.inline{
+  display: inline;
+}
 .flex{
   display: flex;
 }
@@ -1168,23 +1168,8 @@ video {
 .hidden{
   display: none;
 }
-.aspect-square{
-  aspect-ratio: 1 / 1;
-}
-.aspect-\[3\/4\]{
-  aspect-ratio: 3/4;
-}
-.aspect-\[298\/234\]{
-  aspect-ratio: 298/234;
-}
-.h-10{
-  height: 2.5rem;
-}
 .h-9{
   height: 2.25rem;
-}
-.min-h-\[40px\]{
-  min-height: 40px;
 }
 .w-1\/2{
   width: 50%;
@@ -1198,6 +1183,18 @@ video {
 .w-9{
   width: 2.25rem;
 }
+.w-auto{
+  width: auto;
+}
+.w-full{
+  width: 100%;
+}
+.w-24{
+  width: 6rem;
+}
+.w-20{
+  width: 5rem;
+}
 .min-w-0{
   min-width: 0px;
 }
@@ -1207,8 +1204,8 @@ video {
 .min-w-\[calc\(100\%_-_332px\)\]{
   min-width: calc(100% - 332px);
 }
-.min-w-\[calc\(100\%_-_614px\)\]{
-  min-width: calc(100% - 614px);
+.min-w-\[calc\(100\%_-_824px\)\]{
+  min-width: calc(100% - 824px);
 }
 .min-w-\[calc\(100\%_-_90px\)\]{
   min-width: calc(100% - 90px);
@@ -1216,20 +1213,11 @@ video {
 .min-w-full{
   min-width: 100%;
 }
-.min-w-\[calc\(100\%_-_414px\)\]{
-  min-width: calc(100% - 414px);
+.min-w-\[96px\]{
+  min-width: 96px;
 }
-.min-w-\[calc\(100\%_-_514px\)\]{
-  min-width: calc(100% - 514px);
-}
-.min-w-\[calc\(100\%_-_714px\)\]{
-  min-width: calc(100% - 714px);
-}
-.min-w-\[calc\(100\%_-_814px\)\]{
-  min-width: calc(100% - 814px);
-}
-.min-w-\[calc\(100\%_-_824px\)\]{
-  min-width: calc(100% - 824px);
+.min-w-\[80px\]{
+  min-width: 80px;
 }
 .max-w-2xl{
   max-width: 42rem;
@@ -1270,23 +1258,17 @@ video {
 .basis-7\/12{
   flex-basis: 58.333333%;
 }
-.basis-\[250px\]{
-  flex-basis: 250px;
-}
 .basis-\[300px\]{
   flex-basis: 300px;
+}
+.basis-\[460px\]{
+  flex-basis: 460px;
 }
 .basis-\[90px\]{
   flex-basis: 90px;
 }
-.basis-\[350px\]{
-  flex-basis: 350px;
-}
-.basis-\[450px\]{
-  flex-basis: 450px;
-}
-.basis-\[460px\]{
-  flex-basis: 460px;
+.basis-24{
+  flex-basis: 6rem;
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1318,6 +1300,9 @@ video {
 .gap-2{
   gap: 0.5rem;
 }
+.gap-3{
+  gap: 0.75rem;
+}
 .gap-4{
   gap: 1rem;
 }
@@ -1335,6 +1320,9 @@ video {
 }
 .whitespace-nowrap{
   white-space: nowrap;
+}
+.rounded-full{
+  border-radius: 9999px;
 }
 .rounded-lg{
   border-radius: 0.5rem;
@@ -1355,6 +1343,9 @@ video {
 }
 .rounded-br-xl{
   border-bottom-right-radius: 0.75rem;
+}
+.rounded-tr-xl{
+  border-top-right-radius: 0.75rem;
 }
 .border-2{
   border-width: 2px;
@@ -1415,6 +1406,14 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+.bg-slate-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
 .fill-blue-500{
   fill: #3b82f6;
 }
@@ -1439,8 +1438,14 @@ video {
 .p-4{
   padding: 1rem;
 }
+.p-6{
+  padding: 1.5rem;
+}
 .p-8{
   padding: 2rem;
+}
+.p-5{
+  padding: 1.25rem;
 }
 .px-2{
   padding-left: 0.5rem;
@@ -1490,6 +1495,9 @@ video {
 .pt-8{
   padding-top: 2rem;
 }
+.pr-6{
+  padding-right: 1.5rem;
+}
 .text-center{
   text-align: center;
 }
@@ -1529,12 +1537,6 @@ video {
 }
 .font-medium{
   font-weight: 500;
-}
-.font-semibold{
-  font-weight: 600;
-}
-.font-light{
-  font-weight: 300;
 }
 .uppercase{
   text-transform: uppercase;
@@ -1660,6 +1662,12 @@ video {
   }
   .lg\:hidden{
     display: none;
+  }
+  .lg\:w-24{
+    width: 6rem;
+  }
+  .lg\:min-w-\[96px\]{
+    min-width: 96px;
   }
 }
 @media (min-width: 1280px){

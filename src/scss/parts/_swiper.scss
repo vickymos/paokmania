@@ -30,7 +30,7 @@
     transform: rotate(-90deg);
   }
 
-  .swiper-slide img {
+  .swiper-slide img:not(.default-img) {
     display: block;
     width: 100%;
     height: 100%;

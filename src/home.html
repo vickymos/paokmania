@@ -627,8 +627,8 @@
         </div>
 
 
-        <div class="px-4 my-8 bg-slate-600 pt-10 pb-4"> 
-            <section class="wide-column max-w-screen-xl mx-auto ">
+        <section class="px-4 my-8 bg-slate-600 py-10"> 
+            <div class="wide-column max-w-screen-xl mx-auto ">
                 <h2 class="font-bold font-headings italic mb-4 uppercase text-2xl text-white">Video Gallery</h2>
 
                 <div class="swiper SwiperVideos mt-2">
@@ -764,8 +764,80 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+
+        <section class="px-4 my-8 py-10"> 
+            <div class="wide-column max-w-screen-xl mx-auto ">
+                <h2 class="font-bold font-headings italic mb-4 uppercase text-2xl">Bloggers</h2>
+
+                <div class="swiper SwiperBloggers mt-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="/" class="block w-full ">
+                                <div class="flex items-center  bg-slate-300 p-5 rounded-tr-xl mb-3">
+                                    <div class="relative">
+                                        <img src="https://i.pravatar.cc/192" alt="image" width="96" height="96" class="min-w-[80px] lg:min-w-[96px] w-20 lg:w-24 rounded-full inline default-img" loading="lazy"/>                                   
+                                    </div>
+                                    
+                                    <h3 class="p-4 mb-1 font-headings font-bold text-xl">Mrs Robbinson</h3>                                                                        
+                                </div>    
+                                
+                                <h3 class="mb-1 font-headings font-bold leading-5 pr-6">Ασπρομαυρες ιστορίες</h3>
+                                <time class="block mb-2 text-xs font-medium text-gray-700">Παρασκευή, 11 Αυγούστου 2023 16:07</time>
+                            </a>                           
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="/" class="block w-full ">
+                                <div class="flex items-center bg-slate-300 p-5 rounded-tr-xl mb-3">
+                                    <div class="relative">
+                                        <img src="https://i.pravatar.cc/192" alt="image" width="96" height="96" class="min-w-[80px] lg:min-w-[96px] w-20 lg:w-24 rounded-full inline default-img" loading="lazy"/>                                   
+                                    </div>
+                                    
+                                    <h3 class="p-4 mb-1 font-headings font-bold text-xl leading-5">George Papadimitrakopoulos</h3>                                                                        
+                                </div>    
+                                
+                                <h3 class="mb-1 font-headings font-bold leading-5 pr-6">Ο «μάγος» Κωνσταντέλιας αποκαλύπτεται: «Όποιος θέλει ας με ξέρει κι όποιος θέλει ας μην με ξέρει»!</h3>
+                                <time class="block mb-2 text-xs font-medium text-gray-700">Παρασκευή, 11 Αυγούστου 2023 16:07</time>
+                            </a>                           
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="/" class="block w-full ">
+                                <div class="flex items-center bg-slate-300 p-5 rounded-tr-xl mb-3">
+                                    <div class="relative">
+                                        <img src="https://i.pravatar.cc/192" alt="image" width="96" height="96" class="min-w-[80px] lg:min-w-[96px] w-20 lg:w-24 rounded-full inline default-img" loading="lazy"/>                                   
+                                    </div>
+                                    
+                                    <h3 class="p-4 mb-1 font-headings font-bold text-xl leading-5">Babis Antoniou</h3>                                                                        
+                                </div>    
+                                
+                                <h3 class="mb-1 font-headings font-bold leading-5 pr-6">Ασπρομαυρες ιστορίες</h3>
+                                <time class="block mb-2 text-xs font-medium text-gray-700">Παρασκευή, 11 Αυγούστου 2023 16:07</time>
+                            </a>                           
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/" class="block w-full ">
+                                <div class="flex items-center bg-slate-300 p-5 rounded-tr-xl mb-3">
+                                    <div class="relative">
+                                        <img src="https://i.pravatar.cc/192" alt="image" width="96" height="96" class=" min-w-[80px] lg:min-w-[96px] w-20 lg:w-24 rounded-full inline default-img" loading="lazy"/>                                   
+                                    </div>
+                                    
+                                    <h3 class="p-4 mb-1 font-headings font-bold text-xl leading-5">Rebekka Atkins</h3>                                                                        
+                                </div>    
+                                
+                                <h3 class="mb-1 font-headings font-bold leading-5">Ασπρομαυρες ιστορίες</h3>
+                                <time class="block mb-2 text-xs font-medium text-gray-700">Παρασκευή, 11 Αυγούστου 2023 16:07</time>
+                            </a>                           
+                        </div>
+
+                       
+                     
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -930,13 +1002,10 @@
 
     //video slider start
     var SwiperVideos = new Swiper(".SwiperVideos", {
-      spaceBetween: 8,
+      spaceBetween: 12,
       slidesPerView: 1,
       allowTouchMove: true,
       breakpoints: {    
-        480: {
-        slidesPerView: 2,    
-        },
         640: {
         slidesPerView: 3        
         },
@@ -946,6 +1015,25 @@
       }
     });
     //video slider end
+
+
+    
+    
+    //Bloggers slider start
+    var SwiperBloggers = new Swiper(".SwiperBloggers", {
+      spaceBetween: 12,
+      slidesPerView: 1,
+      allowTouchMove: true,
+      breakpoints: {    
+        640: {
+        slidesPerView: 2        
+        },
+        1023: {
+        slidesPerView: 3        
+        }
+      }
+    });
+    //Bloggers slider end
 
 
     //marquee slider
